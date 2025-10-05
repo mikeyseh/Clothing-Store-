@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Clothing Brand</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav style="background-color: #2c3e50; padding: 1rem;">
+            <ul style="display: flex; justify-content: space-around; list-style: none; padding: 0;">
+                <li><a href="/" style="color: #ecf0f1; text-decoration: none;">Home</a></li>
+                <li><a href="/Shop" style="color: #ecf0f1; text-decoration: none;">Shop</a></li>
+                <li><a href="/About" style="color: #ecf0f1; text-decoration: none;">About</a></li>
+                <li><a href="/Contact" style="color: #ecf0f1; text-decoration: none;">Contact</a></li>
+                <li><span id="cart-count" style="color: #ecf0f1;">0 items in cart</span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h1>Reinvent Your Style</h1>
+            <p>High-end, Street-inspired fashion</p>
+        </div>
+    </section>
+
+    <section class="products">
+        <h2 style="text-align: center; margin: 2rem 0;">Featured Products</h2>
+        <div class="product-list">
+            <div class="product-card">
+                <img src="/images/product1.jpg" alt="Product 1">
+                <h3>Signature Hoodie</h3>
+                <p>$250.00</p>
+                <button onclick="addToCart(1)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="/images/product2.jpg" alt="Product 2">
+                <h3>Luxury Tee</h3>
+                <p>$180.00</p>
+                <button onclick="addToCart(2)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="/images/product3.jpg" alt="Product 3">
+                <h3>Designer Sneakers</h3>
+                <p>$450.00</p>
+                <button onclick="addToCart(3)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background-color: #2c3e50; padding: 1rem; text-align: center;">
+        <p>&copy; 2024 Unique Clothing Brand. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
